@@ -1,330 +1,310 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WIDE Space Working Group | 宇宙インターネットの研究開発</title>
-  <meta name="description"
-    content="WIDE Space Working Group は、WIDEプロジェクト内で宇宙空間におけるインターネット技術（DTN・CGR等）の研究開発と国際標準化を推進するワーキンググループです。">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WIDE Space Working Group | 宇宙インターネットの研究開発</title>
+<meta content="WIDE Space Working Group は、WIDEプロジェクト内で宇宙空間におけるインターネット技術（DTN・CGR等）の研究開発と国際標準化を推進するワーキンググループです。" name="description"/>
+<link href="https://space.wide.ad.jp/" rel="canonical"/>
 
-  <link rel="canonical" href="https://space.wide.ad.jp/">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="WIDE Space Working Group">
-  <meta property="og:description"
-    content="宇宙インターネットの実現に向けた研究開発 / Research and Development toward the Interplanetary Internet">
-  <meta property="og:url" content="https://space.wide.ad.jp/">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:card" content="summary">
-
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
-</head>
-
+<meta content="website" property="og:type"/>
+<meta content="WIDE Space Working Group" property="og:title"/>
+<meta content="宇宙インターネットの実現に向けた研究開発 / Research and Development toward the Interplanetary Internet" property="og:description"/>
+<meta content="https://space.wide.ad.jp/" property="og:url"/>
+<meta content="ja_JP" property="og:locale"/>
+<meta content="summary" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="https://space.wide.ad.jp/" hreflang="ja" rel="alternate"/><link href="https://space.wide.ad.jp/en/" hreflang="en" rel="alternate"/><style>
+.language-switch { display:flex; gap:4px; flex-shrink:0; }
+.language-switch a { color:#fff; font-size:13px; padding:6px 8px; border-radius:4px; white-space:nowrap; }
+.language-switch a[aria-current="page"] { background:rgba(255,255,255,.18); font-weight:700; }
+.language-switch a:hover { background:rgba(255,255,255,.12); text-decoration:none; }
+.language-switch a:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+@media (min-width:861px) and (max-width:1200px) { .navbar-nav a { padding:6px 5px; } .navbar { padding:0 16px; } }
+@media (max-width:400px) { .navbar { padding:0 10px; } .navbar-brand { font-size:13px; gap:5px; } .brand-logo { width:28px; height:28px; } .language-switch a { padding:6px 5px; font-size:12px; } }
+</style></head>
 <body>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar">
-    <a href="/" class="navbar-brand"><img src="/assets/blue-logo.svg" alt="" class="brand-logo">WIDE Space WG</a>
-    <div class="nav-right">
-      <ul class="navbar-nav" id="navMenu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#goal">Goal</a></li>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#repository">Repository</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
-      <button type="button" class="menu-toggle" id="menuToggle" aria-label="メニューを開閉" aria-expanded="false"
-        aria-controls="navMenu">☰</button>
-    </div>
-  </nav>
+<nav class="navbar">
+<a class="navbar-brand" href="/"><img alt="" class="brand-logo" src="/assets/blue-logo.svg"/>WIDE Space WG</a>
+<div class="nav-right"><div aria-label="Language" class="language-switch"><a aria-current="page" href="/" hreflang="ja" lang="ja">日本語</a><a href="/en/" hreflang="en" lang="en">English</a></div>
+<ul class="navbar-nav" id="navMenu">
+<li><a href="#about">About</a></li>
+<li><a href="#background">Background</a></li>
+<li><a href="#goal">Goal</a></li>
+<li><a href="#members">Members</a></li>
+<li><a href="#activities">Activities</a></li>
+<li><a href="#repository">Repository</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="/blog/">Blog</a></li>
+</ul>
+<button aria-controls="navMenu" aria-expanded="false" aria-label="メニューを開閉" class="menu-toggle" id="menuToggle" type="button">☰</button>
+</div>
+</nav>
 
-  <!-- ===== Hero ===== -->
-  <header class="hero">
-    <img src="/assets/blue-logo.svg" alt="WIDE Space Working Group ロゴ" class="hero-logo">
-    <h1>WIDE Space Working Group</h1>
-    <p class="tagline">
-      宇宙インターネットの実現に向けた研究開発<br>
+<header class="hero">
+<img alt="WIDE Space Working Group ロゴ" class="hero-logo" src="/assets/blue-logo.svg"/>
+<h1>WIDE Space Working Group</h1>
+<p class="tagline">
+      宇宙インターネットの実現に向けた研究開発<br/>
       Research and Development toward the Interplanetary Internet
     </p>
-  </header>
+</header>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <div class="section-inner fade-in">
-      <h2>About</h2>
-      <p>
+<section class="section" id="about">
+<div class="section-inner fade-in">
+<h2>About</h2>
+<p>
         WIDE Space Working Group は、WIDEプロジェクト内において宇宙空間におけるインターネット技術の研究開発を推進するワーキンググループである。
         遅延耐性ネットワーク (DTN: Delay-Tolerant Networking) やコンタクトグラフルーティング (CGR: Contact Graph Routing) をはじめとする宇宙ネットワーク技術の研究、
         および国際標準化活動への参画を主な活動とする。
       </p>
-      <p class="en">
+<p class="en">
         The WIDE Space Working Group conducts research and development on Internet technologies for space communications
         within the WIDE Project.
         Our primary activities include research on space networking technologies such as Delay-Tolerant Networking (DTN)
         and Contact Graph Routing (CGR),
         as well as participation in international standardization efforts.
       </p>
-    </div>
-  </section>
+</div>
+</section>
 
-  <!-- ===== Background ===== -->
-  <section id="background" class="section section-alt">
-    <div class="section-inner fade-in">
-      <h2>Background</h2>
-      <p>
+<section class="section section-alt" id="background">
+<div class="section-inner fade-in">
+<h2>Background</h2>
+<p>
         月・火星探査計画の本格化に伴い、宇宙空間における通信インフラの重要性が急速に増している。
         NASA の LunaNet や ESA の Moonlight など、各宇宙機関は月面通信ネットワークの構築を進めており、
         2030年代には数十〜数百のノードが月周辺に展開されることが想定されている。
       </p>
-      <p class="en">
+<p class="en">
         With the acceleration of lunar and Mars exploration programs, the importance of communication infrastructure in
         space is rapidly growing.
         Space agencies are developing lunar communication networks such as NASA's LunaNet and ESA's Moonlight,
         and it is expected that tens to hundreds of nodes will be deployed around the Moon by the 2030s.
       </p>
-      <p>
+<p>
         しかしながら、宇宙ネットワークは長遅延・断続的接続・限られた計算資源という固有の制約を持ち、
         地上インターネットの技術をそのまま適用することはできない。
         CCSDS (Consultative Committee for Space Data Systems) はDTNアーキテクチャに基づく標準化を進めているが、
         ネットワーク規模の拡大に伴うスケーラビリティの課題は未解決のまま残されている。
       </p>
-      <p class="en">
+<p class="en">
         However, space networks face unique constraints including long delays, intermittent connectivity, and limited
         computational resources,
         making it impossible to directly apply terrestrial Internet technologies.
         While CCSDS is advancing standardization based on the DTN architecture,
         scalability challenges associated with growing network size remain unresolved.
       </p>
-    </div>
-  </section>
+</div>
+</section>
 
-  <!-- ===== Goal ===== -->
-  <section id="goal" class="section">
-    <div class="section-inner fade-in">
-      <h2>Goal</h2>
-      <p>
+<section class="section" id="goal">
+<div class="section-inner fade-in">
+<h2>Goal</h2>
+<p>
         本ワーキンググループは、以下の目標を掲げて活動を行う。
       </p>
-      <p class="en">
+<p class="en">
         This working group pursues the following goals:
       </p>
-      <ul>
-        <li>
-          スケーラブルな宇宙ネットワークルーティング手法の研究開発<br>
-          <small>Research and development of scalable routing methods for space networks</small>
-        </li>
-        <li>
-          DTN技術を用いた宇宙-地上間通信テストベッドの構築と実証<br>
-          <small>Construction and demonstration of space-terrestrial communication testbeds using DTN
+<ul>
+<li>
+          スケーラブルな宇宙ネットワークルーティング手法の研究開発<br/>
+<small>Research and development of scalable routing methods for space networks</small>
+</li>
+<li>
+          DTN技術を用いた宇宙-地上間通信テストベッドの構築と実証<br/>
+<small>Construction and demonstration of space-terrestrial communication testbeds using DTN
             technologies</small>
-        </li>
-        <li>
-          IETF / IRTF / CCSDS における宇宙ネットワーク標準化活動への貢献<br>
-          <small>Contributing to space networking standardization activities in IETF / IRTF / CCSDS</small>
-        </li>
-        <li>
-          宇宙インターネットに関する知見の蓄積と国内外の研究コミュニティとの連携<br>
-          <small>Accumulating knowledge on the Interplanetary Internet and collaborating with domestic and international
+</li>
+<li>
+          IETF / IRTF / CCSDS における宇宙ネットワーク標準化活動への貢献<br/>
+<small>Contributing to space networking standardization activities in IETF / IRTF / CCSDS</small>
+</li>
+<li>
+          宇宙インターネットに関する知見の蓄積と国内外の研究コミュニティとの連携<br/>
+<small>Accumulating knowledge on the Interplanetary Internet and collaborating with domestic and international
             research communities</small>
-        </li>
-      </ul>
-    </div>
-  </section>
+</li>
+</ul>
+</div>
+</section>
 
-  <!-- ===== Members ===== -->
-  <section id="members" class="section section-alt">
-    <div class="section-inner fade-in">
-      <h2>Members</h2>
-      <table class="members-table">
-        <thead>
-          <tr>
-            <th>Name / 氏名</th>
-            <th>Affiliation / 所属</th>
-            <th>Role / 役割</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://www.k-ris.keio.ac.jp/html/100012561_ja.html" target="_blank" rel="noopener">植原
-                啓介</a><br><small>Keisuke Uehara</small></td>
-            <td>慶應義塾大学 環境情報学部 教授<br><small>Professor, Faculty of Environment and Information Studies, Keio
+<section class="section section-alt" id="members">
+<div class="section-inner fade-in">
+<h2>Members</h2>
+<table class="members-table">
+<thead>
+<tr>
+<th>Name / 氏名</th>
+<th>Affiliation / 所属</th>
+<th>Role / 役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.k-ris.keio.ac.jp/html/100012561_ja.html" rel="noopener" target="_blank">植原
+                啓介</a><br/><small>Keisuke Uehara</small></td>
+<td>慶應義塾大学 環境情報学部 教授<br/><small>Professor, Faculty of Environment and Information Studies, Keio
                 University</small></td>
-            <td>代表<br><small>Chair</small></td>
-          </tr>
-          <tr>
-            <td><a href="https://www.u-tokyo.ac.jp/focus/ja/people/people100463.html" target="_blank" rel="noopener">石原
-                知洋</a><br><small>Tomohiro Ishihara</small></td>
-            <td>東京大学 大学院総合文化研究科 准教授<br><small>Associate Professor, Graduate School of Arts and Sciences, The University
+<td>代表<br/><small>Chair</small></td>
+</tr>
+<tr>
+<td><a href="https://www.u-tokyo.ac.jp/focus/ja/people/people100463.html" rel="noopener" target="_blank">石原
+                知洋</a><br/><small>Tomohiro Ishihara</small></td>
+<td>東京大学 大学院総合文化研究科 准教授<br/><small>Associate Professor, Graduate School of Arts and Sciences, The University
                 of Tokyo</small></td>
-            <td>代表<br><small>Chair</small></td>
-          </tr>
-          <tr>
-            <td>鈴木 翔太<br><small>Shota Suzuki</small></td>
-            <td>慶應義塾大学 政策・メディア研究科<br><small>Graduate School of Media and Governance, Keio University</small></td>
-            <td>メンバー<br><small>Member</small></td>
-          </tr>
-          <tr>
-            <td>内田 祥喜<br><small>Yoshiki Uchida</small></td>
-            <td>慶應義塾大学 政策・メディア研究科<br><small>Graduate School of Media and Governance, Keio University</small></td>
-            <td>メンバー<br><small>Member</small></td>
-          </tr>
-          <tr>
-            <td>Tony Chen</td>
-            <td>慶應義塾大学 環境情報学部<br><small>Faculty of Environment and Information Studies, Keio University</small></td>
-            <td>メンバー<br><small>Member</small></td>
-          </tr>
-          <tr>
-            <td>渡邉 巽<br><small>Tatsumi Watanabe</small></td>
-            <td>—</td>
-            <td>メンバー<br><small>Member</small></td>
-          </tr>
-          <!-- 追加メンバーはこの下に <tr> を足してください / Add more members as <tr> rows below -->
-        </tbody>
-      </table>
-      <p class="note">
-        ※ WGへの参加に関心のある方は、<a href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a> までご連絡ください。<br>
-        <small>If you are interested in joining the WG, please contact us at <a
-            href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a>.</small>
-      </p>
-    </div>
-  </section>
+<td>代表<br/><small>Chair</small></td>
+</tr>
+<tr>
+<td>鈴木 翔太<br/><small>Shota Suzuki</small></td>
+<td>慶應義塾大学 政策・メディア研究科<br/><small>Graduate School of Media and Governance, Keio University</small></td>
+<td>メンバー<br/><small>Member</small></td>
+</tr>
+<tr>
+<td>内田 祥喜<br/><small>Yoshiki Uchida</small></td>
+<td>慶應義塾大学 政策・メディア研究科<br/><small>Graduate School of Media and Governance, Keio University</small></td>
+<td>メンバー<br/><small>Member</small></td>
+</tr>
+<tr>
+<td>Tony Chen</td>
+<td>慶應義塾大学 環境情報学部<br/><small>Faculty of Environment and Information Studies, Keio University</small></td>
+<td>メンバー<br/><small>Member</small></td>
+</tr>
+<tr>
+<td>渡邉 巽<br/><small>Tatsumi Watanabe</small></td>
+<td>—</td>
+<td>メンバー<br/><small>Member</small></td>
+</tr>
 
-  <!-- ===== Activities ===== -->
-  <section id="activities" class="section">
-    <div class="section-inner fade-in">
-      <h2>Activities</h2>
-      <p>
+</tbody>
+</table>
+<p class="note">
+        ※ WGへの参加に関心のある方は、<a href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a> までご連絡ください。<br/>
+<small>If you are interested in joining the WG, please contact us at <a href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a>.</small>
+</p>
+</div>
+</section>
+
+<section class="section" id="activities">
+<div class="section-inner fade-in">
+<h2>Activities</h2>
+<p>
         本WGは以下の活動に取り組んでいる。
       </p>
-      <p class="en">
+<p class="en">
         The WG is engaged in the following activities:
       </p>
-      <ul>
-        <li>
-          IRTF SPACERG (Systems and Protocol Aspects for Circumstellar Environments Research Group) への参加・貢献<br>
-          <small>Participation and contribution to IRTF SPACERG</small>
-        </li>
-        <li>
-          階層型DTNルーティング (Inter-Region Contact Graph Routing) の研究<br>
-          <small>Research on hierarchical DTN routing (Inter-Region Contact Graph Routing)</small>
-        </li>
-        <li>
-          BPv7を用いた宇宙-地上間Webアクセスシステムの実装と評価<br>
-          <small>Implementation and evaluation of space-terrestrial web access systems using BPv7</small>
-        </li>
-        <li>
-          WIDE研究会・合宿における研究発表と議論<br>
-          <small>Research presentations and discussions at WIDE workshops and retreats</small>
-        </li>
-      </ul>
-    </div>
-  </section>
+<ul>
+<li>
+          IRTF SPACERG (Systems and Protocol Aspects for Circumstellar Environments Research Group) への参加・貢献<br/>
+<small>Participation and contribution to IRTF SPACERG</small>
+</li>
+<li>
+          階層型DTNルーティング (Inter-Region Contact Graph Routing) の研究<br/>
+<small>Research on hierarchical DTN routing (Inter-Region Contact Graph Routing)</small>
+</li>
+<li>
+          BPv7を用いた宇宙-地上間Webアクセスシステムの実装と評価<br/>
+<small>Implementation and evaluation of space-terrestrial web access systems using BPv7</small>
+</li>
+<li>
+          WIDE研究会・合宿における研究発表と議論<br/>
+<small>Research presentations and discussions at WIDE workshops and retreats</small>
+</li>
+</ul>
+</div>
+</section>
 
-  <!-- ===== Repository ===== -->
-  <section id="repository" class="section section-alt">
-    <div class="section-inner fade-in">
-      <h2>Repository</h2>
-      <p>本WGの活動から生まれたソフトウェアを公開している。</p>
-      <div class="repo-list">
-        <div class="repo-card">
-          <h3><a href="https://github.com/space-wg/InterPlanetary-DelayMaker" target="_blank"
-              rel="noopener">InterPlanetary-DelayMaker</a></h3>
-          <p>L2透過型の惑星間通信遅延エミュレータ。火星（片道3〜22分）や月（1.3秒）規模の通信遅延をDocker環境で再現し、リアルタイムなWebダッシュボードから仮想リンク上のパケットの流れを制御・監視できる。</p>
-          <p class="en">A Layer-2 transparent interplanetary delay emulator. It reproduces Mars (one-way 3–22 min) and
+<section class="section section-alt" id="repository">
+<div class="section-inner fade-in">
+<h2>Repository</h2>
+<p>本WGの活動から生まれたソフトウェアを公開している。</p>
+<div class="repo-list">
+<div class="repo-card">
+<h3><a href="https://github.com/space-wg/InterPlanetary-DelayMaker" rel="noopener" target="_blank">InterPlanetary-DelayMaker</a></h3>
+<p>L2透過型の惑星間通信遅延エミュレータ。火星（片道3〜22分）や月（1.3秒）規模の通信遅延をDocker環境で再現し、リアルタイムなWebダッシュボードから仮想リンク上のパケットの流れを制御・監視できる。</p>
+<p class="en">A Layer-2 transparent interplanetary delay emulator. It reproduces Mars (one-way 3–22 min) and
             Moon (1.3 s) communication delays in a Docker environment, with a real-time web dashboard to control and
             monitor packet flow across virtual links.</p>
-          <div class="repo-meta">
-            <span class="tag"><span class="dot go"></span>Go</span>
-            <span class="tag"><span class="dot docker"></span>Docker</span>
-            <a href="https://github.com/space-wg/InterPlanetary-DelayMaker" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </div>
-      </div>
-      <p class="repo-more">
-        その他のリポジトリは <a href="https://github.com/space-wg" target="_blank" rel="noopener">GitHub @space-wg</a> を参照。
+<div class="repo-meta">
+<span class="tag"><span class="dot go"></span>Go</span>
+<span class="tag"><span class="dot docker"></span>Docker</span>
+<a href="https://github.com/space-wg/InterPlanetary-DelayMaker" rel="noopener" target="_blank">GitHub →</a>
+</div>
+</div>
+</div>
+<p class="repo-more">
+        その他のリポジトリは <a href="https://github.com/space-wg" rel="noopener" target="_blank">GitHub @space-wg</a> を参照。
       </p>
-    </div>
-  </section>
+</div>
+</section>
 
-  <!-- ===== Publications ===== -->
-  <section id="publications" class="section">
-    <div class="section-inner fade-in">
-      <h2>Publications</h2>
-      <ol class="pub-list">
-        <li>
-          鈴木, 翔太, Juan A. Fraire, 植原, 啓介, 2026, <a href="https://stintworkshops.org/" target="_blank"
-            rel="noopener">IR-CGR: Time-Aware Inter-Region Contact Graph Routing for Scalable Space DTNs:</a> IEEE Wireless for Space and Extreme Environments (WiSEE 2026), Space-Terrestrial Internetworking Workshop (STINT 2026).
+<section class="section" id="publications">
+<div class="section-inner fade-in">
+<h2>Publications</h2>
+<ol class="pub-list">
+<li>
+          鈴木, 翔太, Juan A. Fraire, 植原, 啓介, 2026, <a href="https://stintworkshops.org/" rel="noopener" target="_blank">IR-CGR: Time-Aware Inter-Region Contact Graph Routing for Scalable Space DTNs:</a> IEEE Wireless for Space and Extreme Environments (WiSEE 2026), Space-Terrestrial Internetworking Workshop (STINT 2026).
           <small>（採録・2026年9月発表予定 / Accepted, to be presented in September 2026）</small>
-        </li>
-        <li>
-          渡邉,巽, 鈴木,翔太, 石原,知洋, 植原,啓介, 2025, <a href="https://ipsj.ixsq.nii.ac.jp/records/2005998" target="_blank"
-            rel="noopener">惑星間インターネット環境を想定したDTN実験環境におけるトラフィック可視化:</a> 情報処理学会, 86–87 p.
+</li>
+<li>
+          渡邉,巽, 鈴木,翔太, 石原,知洋, 植原,啓介, 2025, <a href="https://ipsj.ixsq.nii.ac.jp/records/2005998" rel="noopener" target="_blank">惑星間インターネット環境を想定したDTN実験環境におけるトラフィック可視化:</a> 情報処理学会, 86–87 p.
           <small>（学生奨励賞受賞 / Student Encouragement Award）</small>
+</li>
+<li>
+          内田, 祥喜, 鈴木, 翔太, 陳, 毅祐, 竹村, 太希, 石原, 知洋, 植原, 啓介, 2024, <a href="https://ipsj.ixsq.nii.ac.jp/records/239298" rel="noopener" target="_blank">INTEROPでの宇宙インターネット環境の再現とDTNを用いたアプリケーションデモの展示:</a> 情報処理学会, 1–8 p.
         </li>
-        <li>
-          内田, 祥喜, 鈴木, 翔太, 陳, 毅祐, 竹村, 太希, 石原, 知洋, 植原, 啓介, 2024, <a href="https://ipsj.ixsq.nii.ac.jp/records/239298"
-            target="_blank" rel="noopener">INTEROPでの宇宙インターネット環境の再現とDTNを用いたアプリケーションデモの展示:</a> 情報処理学会, 1–8 p.
-        </li>
-      </ol>
-    </div>
-  </section>
+</ol>
+</div>
+</section>
 
-  <!-- ===== Links ===== -->
-  <section id="links" class="section section-alt">
-    <div class="section-inner fade-in">
-      <h2>Links</h2>
-      <div class="links-grid">
-        <a href="https://www.wide.ad.jp/" class="link-item" target="_blank" rel="noopener">
+<section class="section section-alt" id="links">
+<div class="section-inner fade-in">
+<h2>Links</h2>
+<div class="links-grid">
+<a class="link-item" href="https://www.wide.ad.jp/" rel="noopener" target="_blank">
           WIDE Project
           <small>Widely Integrated Distributed Environment</small>
-        </a>
-        <a href="https://github.com/space-wg" class="link-item" target="_blank" rel="noopener">
+</a>
+<a class="link-item" href="https://github.com/space-wg" rel="noopener" target="_blank">
           GitHub
           <small>@space-wg — 公開リポジトリ</small>
-        </a>
-        <a href="https://www.irtf.org/spacerg.html" class="link-item" target="_blank" rel="noopener">
+</a>
+<a class="link-item" href="https://www.irtf.org/spacerg.html" rel="noopener" target="_blank">
           IRTF SPACERG
           <small>Systems and Protocol Aspects for Circumstellar Environments</small>
-        </a>
-        <a href="https://datatracker.ietf.org/wg/dtn/about/" class="link-item" target="_blank" rel="noopener">
+</a>
+<a class="link-item" href="https://datatracker.ietf.org/wg/dtn/about/" rel="noopener" target="_blank">
           IETF DTN WG
           <small>Delay-Tolerant Networking Working Group</small>
-        </a>
-        <a href="https://public.ccsds.org/" class="link-item" target="_blank" rel="noopener">
+</a>
+<a class="link-item" href="https://public.ccsds.org/" rel="noopener" target="_blank">
           CCSDS
           <small>Consultative Committee for Space Data Systems</small>
-        </a>
-        <a href="https://www.ipnsig.org/" class="link-item" target="_blank" rel="noopener">
+</a>
+<a class="link-item" href="https://www.ipnsig.org/" rel="noopener" target="_blank">
           IPNSIG
           <small>InterPlanetary Networking Special Interest Group</small>
-        </a>
-      </div>
-    </div>
-  </section>
+</a>
+</div>
+</div>
+</section>
 
-  <!-- ===== Back to top ===== -->
-  <button type="button" class="back-to-top" id="backToTop" aria-label="ページ上部へ戻る">↑</button>
+<button aria-label="ページ上部へ戻る" class="back-to-top" id="backToTop" type="button">↑</button>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <p>Contact: <a href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a></p>
-    <p>&copy; 2026 WIDE Space Working Group, <a href="https://www.wide.ad.jp/">WIDE Project</a>. All rights reserved.
+<footer class="footer">
+<p>Contact: <a href="mailto:space-wg@wide.ad.jp">space-wg@wide.ad.jp</a></p>
+<p>© 2026 WIDE Space Working Group, <a href="https://www.wide.ad.jp/">WIDE Project</a>. All rights reserved.
     </p>
-  </footer>
-
-  <script src="/assets/main.js" defer></script>
+</footer>
+<script defer="" src="/assets/main.js"></script>
 </body>
-
 </html>
